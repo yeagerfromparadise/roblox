@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ALEX VOLKOV — 3D Artist & Motion Designer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Space+Grotesk:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Cursor -->
+<div id="cursor">
+  <div id="cursor-ring"></div>
+  <div id="cursor-dot"></div>
+</div>
+
+<!-- Nav -->
+<nav>
+  <a href="#" class="nav-logo">Alex Volkov</a>
+  <ul class="nav-links">
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Hero -->
+<section id="hero">
+  <div class="hero-canvas-wrap">
+    <canvas id="hero-canvas"></canvas>
+  </div>
+  <div class="hero-gradient"></div>
+  <div class="hero-content">
+    <p class="hero-label">3D Artist & Motion Designer</p>
+    <h1 class="hero-name">Alex<br><em>Volkov</em></h1>
+    <p class="hero-tagline">Creating cinematic digital worlds.</p>
+    <div class="hero-actions">
+      <a href="#projects" class="btn-primary">
+        <span>View Projects</span>
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
+      </a>
+      <a href="#contact" class="btn-ghost">
+        <span>Contact</span>
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M2 6h8M6 2l4 4-4 4"/></svg>
+      </a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects">
+  <p class="section-label reveal">Featured Work</p>
+  <h2 class="section-title reveal reveal-delay-1">Selected<br><em>Projects</em></h2>
+
+  <div class="projects-grid">
+    <!-- Card 1 – Large -->
+    <div class="project-card large reveal" data-project="neon">
+      <canvas class="project-canvas" data-scene="neon"></canvas>
+      <div class="project-view-hint"><span>Open</span></div>
+      <div class="project-overlay">
+        <p class="project-num">01</p>
+        <h3 class="project-name">Neon District</h3>
+        <p class="project-meta">2026 — Environment Design</p>
+        <div class="project-tools">
+          <span class="tool-tag">Blender</span>
+          <span class="tool-tag">Cycles</span>
+          <span class="tool-tag">After Effects</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="project-card reveal reveal-delay-1" data-project="chrome">
+      <canvas class="project-canvas" data-scene="chrome"></canvas>
+      <div class="project-view-hint"><span>Open</span></div>
+      <div class="project-overlay">
+        <p class="project-num">02</p>
+        <h3 class="project-name">Chrome Sculpture</h3>
+        <p class="project-meta">2025 — Product Visualization</p>
+        <div class="project-tools">
+          <span class="tool-tag">Cinema 4D</span>
+          <span class="tool-tag">Redshift</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="project-card reveal reveal-delay-2" data-project="void">
+      <canvas class="project-canvas" data-scene="void"></canvas>
+      <div class="project-view-hint"><span>Open</span></div>
+      <div class="project-overlay">
+        <p class="project-num">03</p>
+        <h3 class="project-name">Void Sequence</h3>
+        <p class="project-meta">2025 — Motion Design</p>
+        <div class="project-tools">
+          <span class="tool-tag">Houdini</span>
+          <span class="tool-tag">Karma</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="project-card reveal reveal-delay-1" data-project="orbit">
+      <canvas class="project-canvas" data-scene="orbit"></canvas>
+      <div class="project-view-hint"><span>Open</span></div>
+      <div class="project-overlay">
+        <p class="project-num">04</p>
+        <h3 class="project-name">Orbital Drift</h3>
+        <p class="project-meta">2024 — Sci-Fi Environment</p>
+        <div class="project-tools">
+          <span class="tool-tag">Unreal Engine</span>
+          <span class="tool-tag">Blender</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="project-card reveal reveal-delay-2" data-project="liquid">
+      <canvas class="project-canvas" data-scene="liquid"></canvas>
+      <div class="project-view-hint"><span>Open</span></div>
+      <div class="project-overlay">
+        <p class="project-num">05</p>
+        <h3 class="project-name">Liquid Metal</h3>
+        <p class="project-meta">2024 — Abstract Art</p>
+        <div class="project-tools">
+          <span class="tool-tag">Houdini</span>
+          <span class="tool-tag">Substance</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about">
+  <div class="about-left reveal">
+    <div class="about-visual">
+      <canvas id="about-canvas"></canvas>
+    </div>
+  </div>
+  <div class="about-right">
+    <p class="section-label reveal">About</p>
+    <p class="about-manifesto reveal reveal-delay-1">
+      I create <em>atmospheric 3D visuals</em> focused on emotion, lighting and cinematic storytelling.
+    </p>
+    <p class="about-text reveal reveal-delay-2">
+      Based in Moscow. Working globally. My work exists at the intersection of technical precision and artistic intuition — each piece a small universe with its own light, weight, and silence.
+    </p>
+    <p class="about-text reveal reveal-delay-3">
+      Inspired by brutalist architecture, analog photography, and the ambient compositions of Brian Eno. I believe the best visual work makes you feel something you can't name.
+    </p>
+    <div class="about-stats reveal reveal-delay-4">
+      <div>
+        <div class="stat-num">6+</div>
+        <div class="stat-label">Years Experience</div>
+      </div>
+      <div>
+        <div class="stat-num">80+</div>
+        <div class="stat-label">Projects</div>
+      </div>
+      <div>
+        <div class="stat-num">40+</div>
+        <div class="stat-label">Clients</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Process -->
+<section id="process">
+  <p class="section-label reveal">How I Work</p>
+  <h2 class="section-title reveal reveal-delay-1">The<br><em>Process</em></h2>
+  <div class="process-grid">
+    <div class="process-step reveal">
+      <div class="process-step-num">01</div>
+      <h3 class="process-step-title">Concept</h3>
+      <p class="process-step-text">Mood boards, references, rough sketches. Defining the emotional core before touching any software.</p>
+    </div>
+    <div class="process-step reveal reveal-delay-1">
+      <div class="process-step-num">02</div>
+      <h3 class="process-step-title">Blockout</h3>
+      <p class="process-step-text">Geometry first. Clay renders to validate composition, scale, and light before any detail work.</p>
+    </div>
+    <div class="process-step reveal reveal-delay-2">
+      <div class="process-step-num">03</div>
+      <h3 class="process-step-title">Lighting</h3>
+      <p class="process-step-text">The most critical pass. Cinematic lighting drives all mood and atmosphere in the final piece.</p>
+    </div>
+    <div class="process-step reveal reveal-delay-3">
+      <div class="process-step-num">04</div>
+      <h3 class="process-step-title">Polish</h3>
+      <p class="process-step-text">Materials, post-processing, color grading. The difference between good and unforgettable.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Tools -->
+<section id="tools">
+  <p class="tools-label">Tools & Software</p>
+  <div class="marquee-wrap">
+    <div class="marquee-track" id="marquee">
+      <!-- Items duplicated for seamless loop -->
+      <div class="marquee-item"><div class="marquee-dot"></div><span class="marquee-item-name">Blender</span></div>
+      <div class="marquee-item"><div class="marquee-dot"></div><span class="marquee-item-name">Cinema 4D</span></div>
+      <div class="marquee-item"><div class="marquee-dot"></div><span class="marquee-item-name">Houdini</span></div>
+      <div class="marquee-item"><div class="marquee-dot"></div><span class="marquee-item-name">Unreal Engine</span></div>
+      <div class="marquee-item"><div class="marquee-dot"></div><span class="marquee-item-name">Substance Painter</span></div>
+      <div class="marquee-item"><div class="marquee-dot"></div><span class="marquee-item-name">After Effects</span></div>
+      <div class="marquee-item"><div class="marquee-dot"></div><span class="marquee-item-name">DaVinci Resolve</span></div>
+      <div class="marquee-item"><div class="marquee-dot"></div><span class="marquee-item-name">ZBrush</span></div>
+      <!-- Duplicate -->
+      <div class="marquee-item"><div class="marquee-dot"></div><span class="marquee-item-name">Blender</span></div>
+      <div class="marquee-item"><div class="marquee-dot"></div><span class="marquee-item-name">Cinema 4D</span></div>
+      <div class="marquee-item"><div class="marquee-dot"></div><span class="marquee-item-name">Houdini</span></div>
+      <div class="marquee-item"><div class="marquee-dot"></div><span class="marquee-item-name">Unreal Engine</span></div>
+      <div class="marquee-item"><div class="marquee-dot"></div><span class="marquee-item-name">Substance Painter</span></div>
+      <div class="marquee-item"><div class="marquee-dot"></div><span class="marquee-item-name">After Effects</span></div>
+      <div class="marquee-item"><div class="marquee-dot"></div><span class="marquee-item-name">DaVinci Resolve</span></div>
+      <div class="marquee-item"><div class="marquee-dot"></div><span class="marquee-item-name">ZBrush</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+  <div class="contact-bg"></div>
+  <p class="section-label reveal">Get in Touch</p>
+  <h2 class="contact-title reveal reveal-delay-1">Let's<br><em>Work</em><br>Together</h2>
+  <div class="contact-links reveal reveal-delay-2">
+    <a href="mailto:alex@volkov.studio" class="contact-link">
+      <span>Email</span>
+    </a>
+    <a href="#" class="contact-link">
+      <span>Instagram</span>
+    </a>
+    <a href="#" class="contact-link">
+      <span>Behance</span>
+    </a>
+    <a href="#" class="contact-link">
+      <span>ArtStation</span>
+    </a>
+  </div>
+  <a href="mailto:alex@volkov.studio" class="contact-email reveal reveal-delay-3">alex@volkov.studio</a>
+</section>
+
+<!-- ── MODAL ── -->
+<div id="modal-backdrop">
+  <div id="modal-overlay"></div>
+  <div id="modal-panel">
+    <div id="modal-inner">
+      <!-- Media (hero visual / video) -->
+      <div class="modal-media">
+        <div class="modal-video-wrap">
+          <div class="modal-video-placeholder" id="modal-placeholder">
+            <canvas id="modal-preview-canvas" style="position:absolute;inset:0;width:100%;height:100%;display:block;"></canvas>
+            <div class="modal-play-btn" id="modal-play-btn" title="Play showreel">
+              <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
+            </div>
+            <span class="modal-video-label">Play Showreel</span>
+          </div>
+          <!-- Real video (hidden until play clicked) -->
+          <video id="modal-video" style="display:none;position:absolute;inset:0;width:100%;height:100%;object-fit:cover;" controls>
+            <!-- Replace src with your actual video -->
+            <source src="your-showreel.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      <!-- Body -->
+      <div class="modal-body">
+        <p class="modal-cat" id="modal-cat">Environment Design</p>
+        <h2 class="modal-title" id="modal-title">Project Name</h2>
+        <p class="modal-desc" id="modal-desc">Project description.</p>
+
+        <div class="modal-divider"></div>
+
+        <p class="modal-section-title">Tools Used</p>
+        <div class="modal-tools" id="modal-tools"></div>
+
+        <div class="modal-divider"></div>
+
+        <p class="modal-section-title">Process Breakdown</p>
+        <div class="modal-shots" id="modal-shots"></div>
+      </div>
+    </div>
+  </div>
+  <button id="modal-close" aria-label="Close">
+    <svg viewBox="0 0 16 16"><path d="M2 2l12 12M14 2L2 14" stroke-width="1.5" stroke-linecap="round"/></svg>
+  </button>
+</div>
+
+<!-- Footer -->
+<footer>
+  <span class="footer-copy">© 2026 Alex Volkov. All rights reserved.</span>
+  <span class="footer-right">Moscow · Global</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
